@@ -1,4 +1,4 @@
-# Generated from Solidity.g4 by ANTLR 4.10.1
+# Generated from Solidity.g4 by ANTLR 4.13.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -802,7 +802,7 @@ class SolidityParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.10.1")
+        self.checkVersion("4.13.0")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -913,7 +913,7 @@ class SolidityParser ( Parser ):
             self.state = 208
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__0) | (1 << SolidityParser.T__12) | (1 << SolidityParser.T__13) | (1 << SolidityParser.T__17) | (1 << SolidityParser.T__18) | (1 << SolidityParser.T__19) | (1 << SolidityParser.T__20) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__25) | (1 << SolidityParser.T__27) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__32) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.FallbackKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451105474568194) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 16244801661) != 0):
                 self.state = 206
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
@@ -1182,11 +1182,11 @@ class SolidityParser ( Parser ):
             self.state = 232
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__3) | (1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0) or _la==SolidityParser.DecimalNumber or _la==SolidityParser.VersionLiteral:
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4080) != 0) or _la==104 or _la==131:
                 self.state = 227
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==SolidityParser.T__3:
+                if _la==4:
                     self.state = 226
                     self.match(SolidityParser.T__3)
 
@@ -1237,7 +1237,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 235
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 4064) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1296,7 +1296,7 @@ class SolidityParser ( Parser ):
                 self.state = 238
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4064) != 0):
                     self.state = 237
                     self.versionOperator()
 
@@ -1310,7 +1310,7 @@ class SolidityParser ( Parser ):
                 self.state = 242
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__4) | (1 << SolidityParser.T__5) | (1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9) | (1 << SolidityParser.T__10))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4064) != 0):
                     self.state = 241
                     self.versionOperator()
 
@@ -1369,7 +1369,7 @@ class SolidityParser ( Parser ):
             self.state = 250
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__11:
+            if _la==12:
                 self.state = 248
                 self.match(SolidityParser.T__11)
                 self.state = 249
@@ -1442,7 +1442,7 @@ class SolidityParser ( Parser ):
                 self.state = 256
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==SolidityParser.T__11:
+                if _la==12:
                     self.state = 254
                     self.match(SolidityParser.T__11)
                     self.state = 255
@@ -1460,11 +1460,11 @@ class SolidityParser ( Parser ):
                 self.state = 263
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [SolidityParser.T__2]:
+                if token in [3]:
                     self.state = 261
                     self.match(SolidityParser.T__2)
                     pass
-                elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__95, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
+                elif token in [14, 25, 42, 54, 96, 114, 118, 126, 128, 129]:
                     self.state = 262
                     self.identifier()
                     pass
@@ -1474,7 +1474,7 @@ class SolidityParser ( Parser ):
                 self.state = 267
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==SolidityParser.T__11:
+                if _la==12:
                     self.state = 265
                     self.match(SolidityParser.T__11)
                     self.state = 266
@@ -1500,7 +1500,7 @@ class SolidityParser ( Parser ):
                 self.state = 280
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 276
                     self.match(SolidityParser.T__15)
                     self.state = 277
@@ -1619,14 +1619,14 @@ class SolidityParser ( Parser ):
             self.state = 293
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__17:
+            if _la==18:
                 self.state = 292
                 self.match(SolidityParser.T__17)
 
 
             self.state = 295
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__18) | (1 << SolidityParser.T__19) | (1 << SolidityParser.T__20))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 3670016) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1636,7 +1636,7 @@ class SolidityParser ( Parser ):
             self.state = 306
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__21:
+            if _la==22:
                 self.state = 297
                 self.match(SolidityParser.T__21)
                 self.state = 298
@@ -1644,7 +1644,7 @@ class SolidityParser ( Parser ):
                 self.state = 303
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 299
                     self.match(SolidityParser.T__15)
                     self.state = 300
@@ -1660,7 +1660,7 @@ class SolidityParser ( Parser ):
             self.state = 312
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__25) | (1 << SolidityParser.T__27) | (1 << SolidityParser.T__28) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__31) | (1 << SolidityParser.T__32) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.FallbackKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451110302466048) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 16244801661) != 0):
                 self.state = 309
                 self.contractPart()
                 self.state = 314
@@ -1719,13 +1719,13 @@ class SolidityParser ( Parser ):
             self.state = 323
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__22:
+            if _la==23:
                 self.state = 318
                 self.match(SolidityParser.T__22)
                 self.state = 320
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                     self.state = 319
                     self.expressionList()
 
@@ -1954,31 +1954,31 @@ class SolidityParser ( Parser ):
             self.state = 345
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while ((((_la - 97)) & ~0x3f) == 0 and ((1 << (_la - 97)) & ((1 << (SolidityParser.T__96 - 97)) | (1 << (SolidityParser.ConstantKeyword - 97)) | (1 << (SolidityParser.ImmutableKeyword - 97)) | (1 << (SolidityParser.InternalKeyword - 97)) | (1 << (SolidityParser.PrivateKeyword - 97)) | (1 << (SolidityParser.PublicKeyword - 97)))) != 0):
+            while ((((_la - 97)) & ~0x3f) == 0 and ((1 << (_la - 97)) & 13680641) != 0):
                 self.state = 343
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [SolidityParser.PublicKeyword]:
+                if token in [120]:
                     self.state = 337
                     self.match(SolidityParser.PublicKeyword)
                     pass
-                elif token in [SolidityParser.InternalKeyword]:
+                elif token in [117]:
                     self.state = 338
                     self.match(SolidityParser.InternalKeyword)
                     pass
-                elif token in [SolidityParser.PrivateKeyword]:
+                elif token in [119]:
                     self.state = 339
                     self.match(SolidityParser.PrivateKeyword)
                     pass
-                elif token in [SolidityParser.ConstantKeyword]:
+                elif token in [111]:
                     self.state = 340
                     self.match(SolidityParser.ConstantKeyword)
                     pass
-                elif token in [SolidityParser.ImmutableKeyword]:
+                elif token in [112]:
                     self.state = 341
                     self.match(SolidityParser.ImmutableKeyword)
                     pass
-                elif token in [SolidityParser.T__96]:
+                elif token in [97]:
                     self.state = 342
                     self.overrideSpecifier()
                     pass
@@ -1994,7 +1994,7 @@ class SolidityParser ( Parser ):
             self.state = 351
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__10:
+            if _la==11:
                 self.state = 349
                 self.match(SolidityParser.T__10)
                 self.state = 350
@@ -2232,11 +2232,11 @@ class SolidityParser ( Parser ):
             self.state = 378
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__2]:
+            if token in [3]:
                 self.state = 376
                 self.match(SolidityParser.T__2)
                 pass
-            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__35, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__54, SolidityParser.T__55, SolidityParser.T__56, SolidityParser.T__57, SolidityParser.T__95, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
+            elif token in [14, 25, 30, 36, 38, 42, 54, 55, 56, 57, 58, 96, 98, 99, 100, 101, 102, 114, 118, 126, 128, 129]:
                 self.state = 377
                 self.typeName(0)
                 pass
@@ -2246,7 +2246,7 @@ class SolidityParser ( Parser ):
             self.state = 381
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.GlobalKeyword:
+            if _la==125:
                 self.state = 380
                 self.match(SolidityParser.GlobalKeyword)
 
@@ -2299,12 +2299,12 @@ class SolidityParser ( Parser ):
             self.state = 397
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__95, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
+            if token in [14, 25, 42, 54, 96, 114, 118, 126, 128, 129]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 385
                 self.userDefinedTypeName()
                 pass
-            elif token in [SolidityParser.T__14]:
+            elif token in [15]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 386
                 self.match(SolidityParser.T__14)
@@ -2313,7 +2313,7 @@ class SolidityParser ( Parser ):
                 self.state = 392
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 388
                     self.match(SolidityParser.T__15)
                     self.state = 389
@@ -2385,7 +2385,7 @@ class SolidityParser ( Parser ):
             self.state = 412
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                 self.state = 402
                 self.variableDeclaration()
                 self.state = 403
@@ -2393,7 +2393,7 @@ class SolidityParser ( Parser ):
                 self.state = 409
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                while (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                     self.state = 404
                     self.variableDeclaration()
                     self.state = 405
@@ -2475,7 +2475,7 @@ class SolidityParser ( Parser ):
             self.state = 419
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__22:
+            if _la==23:
                 self.state = 418
                 self.parameterList()
 
@@ -2483,15 +2483,15 @@ class SolidityParser ( Parser ):
             self.state = 425
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__96 or _la==SolidityParser.VirtualKeyword:
+            while _la==97 or _la==121:
                 self.state = 423
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [SolidityParser.VirtualKeyword]:
+                if token in [121]:
                     self.state = 421
                     self.match(SolidityParser.VirtualKeyword)
                     pass
-                elif token in [SolidityParser.T__96]:
+                elif token in [97]:
                     self.state = 422
                     self.overrideSpecifier()
                     pass
@@ -2505,11 +2505,11 @@ class SolidityParser ( Parser ):
             self.state = 430
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__1]:
+            if token in [2]:
                 self.state = 428
                 self.match(SolidityParser.T__1)
                 pass
-            elif token in [SolidityParser.T__14]:
+            elif token in [15]:
                 self.state = 429
                 self.block()
                 pass
@@ -2566,13 +2566,13 @@ class SolidityParser ( Parser ):
             self.state = 438
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__22:
+            if _la==23:
                 self.state = 433
                 self.match(SolidityParser.T__22)
                 self.state = 435
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                     self.state = 434
                     self.expressionList()
 
@@ -2647,7 +2647,7 @@ class SolidityParser ( Parser ):
             self.state = 444
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__30:
+            if _la==31:
                 self.state = 443
                 self.returnParameters()
 
@@ -2655,11 +2655,11 @@ class SolidityParser ( Parser ):
             self.state = 448
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__1]:
+            if token in [2]:
                 self.state = 446
                 self.match(SolidityParser.T__1)
                 pass
-            elif token in [SolidityParser.T__14]:
+            elif token in [15]:
                 self.state = 447
                 self.block()
                 pass
@@ -2718,30 +2718,30 @@ class SolidityParser ( Parser ):
             self.state = 457
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__29]:
+            if token in [30]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 450
                 self.match(SolidityParser.T__29)
                 self.state = 452
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                     self.state = 451
                     self.identifier()
 
 
                 pass
-            elif token in [SolidityParser.ConstructorKeyword]:
+            elif token in [126]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 454
                 self.match(SolidityParser.ConstructorKeyword)
                 pass
-            elif token in [SolidityParser.FallbackKeyword]:
+            elif token in [127]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 455
                 self.match(SolidityParser.FallbackKeyword)
                 pass
-            elif token in [SolidityParser.ReceiveKeyword]:
+            elif token in [128]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 456
                 self.match(SolidityParser.ReceiveKeyword)
@@ -2884,7 +2884,7 @@ class SolidityParser ( Parser ):
             self.state = 472
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.T__96 - 96)) | (1 << (SolidityParser.ConstantKeyword - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.ExternalKeyword - 96)) | (1 << (SolidityParser.InternalKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.PrivateKeyword - 96)) | (1 << (SolidityParser.PublicKeyword - 96)) | (1 << (SolidityParser.VirtualKeyword - 96)) | (1 << (SolidityParser.PureKeyword - 96)) | (1 << (SolidityParser.ViewKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 14360018947) != 0):
                 self.state = 470
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,40,self._ctx)
@@ -2990,7 +2990,7 @@ class SolidityParser ( Parser ):
             self.state = 479
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.AnonymousKeyword:
+            if _la==109:
                 self.state = 478
                 self.match(SolidityParser.AnonymousKeyword)
 
@@ -3096,7 +3096,7 @@ class SolidityParser ( Parser ):
             self.state = 489
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 488
                 self.enumValue()
 
@@ -3104,7 +3104,7 @@ class SolidityParser ( Parser ):
             self.state = 495
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__15:
+            while _la==16:
                 self.state = 491
                 self.match(SolidityParser.T__15)
                 self.state = 492
@@ -3164,13 +3164,13 @@ class SolidityParser ( Parser ):
             self.state = 509
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                 self.state = 501
                 self.parameter()
                 self.state = 506
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 502
                     self.match(SolidityParser.T__15)
                     self.state = 503
@@ -3245,7 +3245,7 @@ class SolidityParser ( Parser ):
             self.state = 518
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 517
                 self.identifier()
 
@@ -3299,13 +3299,13 @@ class SolidityParser ( Parser ):
             self.state = 529
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                 self.state = 521
                 self.eventParameter()
                 self.state = 526
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 522
                     self.match(SolidityParser.T__15)
                     self.state = 523
@@ -3371,7 +3371,7 @@ class SolidityParser ( Parser ):
             self.state = 535
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.IndexedKeyword:
+            if _la==116:
                 self.state = 534
                 self.match(SolidityParser.IndexedKeyword)
 
@@ -3379,7 +3379,7 @@ class SolidityParser ( Parser ):
             self.state = 538
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 537
                 self.identifier()
 
@@ -3433,13 +3433,13 @@ class SolidityParser ( Parser ):
             self.state = 549
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                 self.state = 541
                 self.functionTypeParameter()
                 self.state = 546
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 542
                     self.match(SolidityParser.T__15)
                     self.state = 543
@@ -3502,7 +3502,7 @@ class SolidityParser ( Parser ):
             self.state = 555
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__39) | (1 << SolidityParser.T__40) | (1 << SolidityParser.T__41))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 7696581394432) != 0):
                 self.state = 554
                 self.storageLocation()
 
@@ -3684,7 +3684,7 @@ class SolidityParser ( Parser ):
                     self.state = 575
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                         self.state = 574
                         self.expression(0)
 
@@ -3799,12 +3799,12 @@ class SolidityParser ( Parser ):
             self.state = 593
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__35, SolidityParser.T__54, SolidityParser.T__55, SolidityParser.T__56, SolidityParser.T__57, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed]:
+            if token in [36, 55, 56, 57, 58, 98, 99, 100, 101, 102]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 591
                 self.elementaryTypeName()
                 pass
-            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__95, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
+            elif token in [14, 25, 42, 54, 96, 114, 118, 126, 128, 129]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 592
                 self.userDefinedTypeName()
@@ -3942,15 +3942,15 @@ class SolidityParser ( Parser ):
                     self.state = 607
                     self._errHandler.sync(self)
                     token = self._input.LA(1)
-                    if token in [SolidityParser.InternalKeyword]:
+                    if token in [117]:
                         self.state = 604
                         self.match(SolidityParser.InternalKeyword)
                         pass
-                    elif token in [SolidityParser.ExternalKeyword]:
+                    elif token in [115]:
                         self.state = 605
                         self.match(SolidityParser.ExternalKeyword)
                         pass
-                    elif token in [SolidityParser.ConstantKeyword, SolidityParser.PayableKeyword, SolidityParser.PureKeyword, SolidityParser.ViewKeyword]:
+                    elif token in [111, 118, 122, 124]:
                         self.state = 606
                         self.stateMutability()
                         pass
@@ -4011,7 +4011,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 616
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__39) | (1 << SolidityParser.T__40) | (1 << SolidityParser.T__41))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 7696581394432) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -4067,7 +4067,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 618
             _la = self._input.LA(1)
-            if not(((((_la - 111)) & ~0x3f) == 0 and ((1 << (_la - 111)) & ((1 << (SolidityParser.ConstantKeyword - 111)) | (1 << (SolidityParser.PayableKeyword - 111)) | (1 << (SolidityParser.PureKeyword - 111)) | (1 << (SolidityParser.ViewKeyword - 111)))) != 0)):
+            if not(((((_la - 111)) & ~0x3f) == 0 and ((1 << (_la - 111)) & 10369) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -4121,7 +4121,7 @@ class SolidityParser ( Parser ):
             self.state = 624
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__14 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__26 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__42 - 6)) | (1 << (SolidityParser.T__44 - 6)) | (1 << (SolidityParser.T__46 - 6)) | (1 << (SolidityParser.T__47 - 6)) | (1 << (SolidityParser.T__48 - 6)) | (1 << (SolidityParser.T__49 - 6)) | (1 << (SolidityParser.T__50 - 6)) | (1 << (SolidityParser.T__51 - 6)) | (1 << (SolidityParser.T__52 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.BreakKeyword - 96)) | (1 << (SolidityParser.ContinueKeyword - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+            while ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539626986937123585) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277337597) != 0):
                 self.state = 621
                 self.statement()
                 self.state = 626
@@ -4493,7 +4493,7 @@ class SolidityParser ( Parser ):
             self.state = 661
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__30:
+            if _la==31:
                 self.state = 660
                 self.returnParameters()
 
@@ -4509,7 +4509,7 @@ class SolidityParser ( Parser ):
                 self.state = 667 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==SolidityParser.T__45):
+                if not (_la==46):
                     break
 
         except RecognitionException as re:
@@ -4566,11 +4566,11 @@ class SolidityParser ( Parser ):
             self.state = 674
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__22) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796597952512) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 671
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                     self.state = 670
                     self.identifier()
 
@@ -4797,11 +4797,11 @@ class SolidityParser ( Parser ):
             self.state = 695
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__33, SolidityParser.T__35, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__54, SolidityParser.T__55, SolidityParser.T__56, SolidityParser.T__57, SolidityParser.T__58, SolidityParser.T__59, SolidityParser.T__60, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__95, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
+            if token in [6, 14, 23, 25, 30, 34, 36, 38, 42, 54, 55, 56, 57, 58, 59, 60, 61, 63, 64, 65, 66, 67, 96, 98, 99, 100, 101, 102, 103, 104, 105, 107, 114, 118, 123, 126, 128, 129, 130]:
                 self.state = 693
                 self.simpleStatement()
                 pass
-            elif token in [SolidityParser.T__1]:
+            elif token in [2]:
                 self.state = 694
                 self.match(SolidityParser.T__1)
                 pass
@@ -4811,11 +4811,11 @@ class SolidityParser ( Parser ):
             self.state = 699
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__33, SolidityParser.T__35, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__54, SolidityParser.T__55, SolidityParser.T__56, SolidityParser.T__57, SolidityParser.T__58, SolidityParser.T__59, SolidityParser.T__60, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__95, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
+            if token in [6, 14, 23, 25, 30, 34, 36, 38, 42, 54, 55, 56, 57, 58, 59, 60, 61, 63, 64, 65, 66, 67, 96, 98, 99, 100, 101, 102, 103, 104, 105, 107, 114, 118, 123, 126, 128, 129, 130]:
                 self.state = 697
                 self.expressionStatement()
                 pass
-            elif token in [SolidityParser.T__1]:
+            elif token in [2]:
                 self.state = 698
                 self.match(SolidityParser.T__1)
                 pass
@@ -4825,7 +4825,7 @@ class SolidityParser ( Parser ):
             self.state = 702
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                 self.state = 701
                 self.expression(0)
 
@@ -4887,7 +4887,7 @@ class SolidityParser ( Parser ):
             self.state = 709
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.StringLiteralFragment:
+            if _la==130:
                 self.state = 708
                 self.match(SolidityParser.StringLiteralFragment)
 
@@ -4895,7 +4895,7 @@ class SolidityParser ( Parser ):
             self.state = 715
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__22:
+            if _la==23:
                 self.state = 711
                 self.match(SolidityParser.T__22)
                 self.state = 712
@@ -5138,7 +5138,7 @@ class SolidityParser ( Parser ):
             self.state = 737
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+            if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                 self.state = 736
                 self.expression(0)
 
@@ -5359,7 +5359,7 @@ class SolidityParser ( Parser ):
             self.state = 763
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__10:
+            if _la==11:
                 self.state = 761
                 self.match(SolidityParser.T__10)
                 self.state = 762
@@ -5415,7 +5415,7 @@ class SolidityParser ( Parser ):
             self.state = 768
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                 self.state = 767
                 self.variableDeclaration()
 
@@ -5423,13 +5423,13 @@ class SolidityParser ( Parser ):
             self.state = 776
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__15:
+            while _la==16:
                 self.state = 770
                 self.match(SolidityParser.T__15)
                 self.state = 772
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__37) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 558451096545148928) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100285) != 0):
                     self.state = 771
                     self.variableDeclaration()
 
@@ -5492,7 +5492,7 @@ class SolidityParser ( Parser ):
                     self.state = 781
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                    if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                         self.state = 780
                         self.identifier()
 
@@ -5506,7 +5506,7 @@ class SolidityParser ( Parser ):
             self.state = 790
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 789
                 self.identifier()
 
@@ -5567,7 +5567,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 794
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__35) | (1 << SolidityParser.T__54) | (1 << SolidityParser.T__55) | (1 << SolidityParser.T__56) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 98)) & ~0x3f) == 0 and ((1 << (_la - 98)) & ((1 << (SolidityParser.Int - 98)) | (1 << (SolidityParser.Uint - 98)) | (1 << (SolidityParser.Byte - 98)) | (1 << (SolidityParser.Fixed - 98)) | (1 << (SolidityParser.Ufixed - 98)))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 540432024003936256) != 0) or ((((_la - 98)) & ~0x3f) == 0 and ((1 << (_la - 98)) & 31) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -5660,7 +5660,7 @@ class SolidityParser ( Parser ):
             elif la_ == 3:
                 self.state = 803
                 _la = self._input.LA(1)
-                if not(_la==SolidityParser.T__58 or _la==SolidityParser.T__59):
+                if not(_la==59 or _la==60):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -5672,7 +5672,7 @@ class SolidityParser ( Parser ):
             elif la_ == 4:
                 self.state = 805
                 _la = self._input.LA(1)
-                if not(_la==SolidityParser.T__62 or _la==SolidityParser.T__63):
+                if not(_la==63 or _la==64):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -5684,7 +5684,7 @@ class SolidityParser ( Parser ):
             elif la_ == 5:
                 self.state = 807
                 _la = self._input.LA(1)
-                if not(_la==SolidityParser.T__64 or _la==SolidityParser.T__65):
+                if not(_la==65 or _la==66):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -5747,7 +5747,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 13)")
                         self.state = 820
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__2 or _la==SolidityParser.T__68 or _la==SolidityParser.T__69):
+                        if not(_la==3 or _la==69 or _la==70):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5765,7 +5765,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 12)")
                         self.state = 823
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__62 or _la==SolidityParser.T__63):
+                        if not(_la==63 or _la==64):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5783,7 +5783,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
                         self.state = 826
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__70 or _la==SolidityParser.T__71):
+                        if not(_la==71 or _la==72):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5840,7 +5840,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
                         self.state = 838
                         _la = self._input.LA(1)
-                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__6) | (1 << SolidityParser.T__7) | (1 << SolidityParser.T__8) | (1 << SolidityParser.T__9))) != 0)):
+                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1920) != 0)):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5858,7 +5858,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 841
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__74 or _la==SolidityParser.T__75):
+                        if not(_la==75 or _la==76):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5919,7 +5919,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
                         self.state = 856
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__10 or ((((_la - 79)) & ~0x3f) == 0 and ((1 << (_la - 79)) & ((1 << (SolidityParser.T__78 - 79)) | (1 << (SolidityParser.T__79 - 79)) | (1 << (SolidityParser.T__80 - 79)) | (1 << (SolidityParser.T__81 - 79)) | (1 << (SolidityParser.T__82 - 79)) | (1 << (SolidityParser.T__83 - 79)) | (1 << (SolidityParser.T__84 - 79)) | (1 << (SolidityParser.T__85 - 79)) | (1 << (SolidityParser.T__86 - 79)) | (1 << (SolidityParser.T__87 - 79)))) != 0)):
+                        if not(_la==11 or ((((_la - 79)) & ~0x3f) == 0 and ((1 << (_la - 79)) & 1023) != 0)):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5937,7 +5937,7 @@ class SolidityParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 27)")
                         self.state = 859
                         _la = self._input.LA(1)
-                        if not(_la==SolidityParser.T__58 or _la==SolidityParser.T__59):
+                        if not(_la==59 or _la==60):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -5971,7 +5971,7 @@ class SolidityParser ( Parser ):
                         self.state = 868
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                             self.state = 867
                             self.expression(0)
 
@@ -5981,7 +5981,7 @@ class SolidityParser ( Parser ):
                         self.state = 872
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                        if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                             self.state = 871
                             self.expression(0)
 
@@ -6213,7 +6213,7 @@ class SolidityParser ( Parser ):
             self.state = 909
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__15:
+            while _la==16:
                 self.state = 905
                 self.match(SolidityParser.T__15)
                 self.state = 906
@@ -6284,7 +6284,7 @@ class SolidityParser ( Parser ):
             self.state = 921
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__15:
+            if _la==16:
                 self.state = 920
                 self.match(SolidityParser.T__15)
 
@@ -6386,14 +6386,14 @@ class SolidityParser ( Parser ):
             self.state = 935
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__14]:
+            if token in [15]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 927
                 self.match(SolidityParser.T__14)
                 self.state = 929
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                     self.state = 928
                     self.nameValueList()
 
@@ -6401,12 +6401,12 @@ class SolidityParser ( Parser ):
                 self.state = 931
                 self.match(SolidityParser.T__16)
                 pass
-            elif token in [SolidityParser.T__5, SolidityParser.T__13, SolidityParser.T__22, SolidityParser.T__23, SolidityParser.T__24, SolidityParser.T__29, SolidityParser.T__33, SolidityParser.T__35, SolidityParser.T__37, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__54, SolidityParser.T__55, SolidityParser.T__56, SolidityParser.T__57, SolidityParser.T__58, SolidityParser.T__59, SolidityParser.T__60, SolidityParser.T__62, SolidityParser.T__63, SolidityParser.T__64, SolidityParser.T__65, SolidityParser.T__66, SolidityParser.T__95, SolidityParser.Int, SolidityParser.Uint, SolidityParser.Byte, SolidityParser.Fixed, SolidityParser.Ufixed, SolidityParser.BooleanLiteral, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.TypeKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
+            elif token in [6, 14, 23, 24, 25, 30, 34, 36, 38, 42, 54, 55, 56, 57, 58, 59, 60, 61, 63, 64, 65, 66, 67, 96, 98, 99, 100, 101, 102, 103, 104, 105, 107, 114, 118, 123, 126, 128, 129, 130]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 933
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                     self.state = 932
                     self.expressionList()
 
@@ -6516,7 +6516,7 @@ class SolidityParser ( Parser ):
             self.state = 946
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__14) | (1 << SolidityParser.T__22) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__26) | (1 << SolidityParser.T__29) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__42) | (1 << SolidityParser.T__48) | (1 << SolidityParser.T__50) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 89)) & ~0x3f) == 0 and ((1 << (_la - 89)) & ((1 << (SolidityParser.T__88 - 89)) | (1 << (SolidityParser.T__91 - 89)) | (1 << (SolidityParser.T__95 - 89)) | (1 << (SolidityParser.DecimalNumber - 89)) | (1 << (SolidityParser.HexNumber - 89)) | (1 << (SolidityParser.HexLiteralFragment - 89)) | (1 << (SolidityParser.BreakKeyword - 89)) | (1 << (SolidityParser.ContinueKeyword - 89)) | (1 << (SolidityParser.LeaveKeyword - 89)) | (1 << (SolidityParser.PayableKeyword - 89)) | (1 << (SolidityParser.ConstructorKeyword - 89)) | (1 << (SolidityParser.ReceiveKeyword - 89)) | (1 << (SolidityParser.Identifier - 89)) | (1 << (SolidityParser.StringLiteralFragment - 89)))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 309072788537262080) != 0) or ((((_la - 89)) & ~0x3f) == 0 and ((1 << (_la - 89)) & 3986319310985) != 0):
                 self.state = 943
                 self.assemblyItem()
                 self.state = 948
@@ -6910,19 +6910,19 @@ class SolidityParser ( Parser ):
             self.state = 984
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__50]:
+            if token in [51]:
                 self.state = 980
                 self.match(SolidityParser.T__50)
                 pass
-            elif token in [SolidityParser.T__35]:
+            elif token in [36]:
                 self.state = 981
                 self.match(SolidityParser.T__35)
                 pass
-            elif token in [SolidityParser.T__57]:
+            elif token in [58]:
                 self.state = 982
                 self.match(SolidityParser.T__57)
                 pass
-            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__41, SolidityParser.T__53, SolidityParser.T__95, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier]:
+            elif token in [14, 25, 42, 54, 96, 114, 118, 126, 128, 129]:
                 self.state = 983
                 self.identifier()
                 pass
@@ -6938,7 +6938,7 @@ class SolidityParser ( Parser ):
                 self.state = 988
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__35) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__50) | (1 << SolidityParser.T__53) | (1 << SolidityParser.T__57))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 308501041274437632) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31142972161) != 0):
                     self.state = 987
                     self.assemblyExpression()
 
@@ -6946,7 +6946,7 @@ class SolidityParser ( Parser ):
                 self.state = 994
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 990
                     self.match(SolidityParser.T__15)
                     self.state = 991
@@ -7011,7 +7011,7 @@ class SolidityParser ( Parser ):
             self.state = 1004
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__89:
+            if _la==90:
                 self.state = 1002
                 self.match(SolidityParser.T__89)
                 self.state = 1003
@@ -7190,7 +7190,7 @@ class SolidityParser ( Parser ):
             self.state = 1023
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__15:
+            while _la==16:
                 self.state = 1019
                 self.match(SolidityParser.T__15)
                 self.state = 1020
@@ -7348,7 +7348,7 @@ class SolidityParser ( Parser ):
             self.state = 1038
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SolidityParser.T__92 or _la==SolidityParser.T__93:
+            while _la==93 or _la==94:
                 self.state = 1035
                 self.assemblyCase()
                 self.state = 1040
@@ -7401,7 +7401,7 @@ class SolidityParser ( Parser ):
             self.state = 1047
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__92]:
+            if token in [93]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 1041
                 self.match(SolidityParser.T__92)
@@ -7410,7 +7410,7 @@ class SolidityParser ( Parser ):
                 self.state = 1043
                 self.assemblyBlock()
                 pass
-            elif token in [SolidityParser.T__93]:
+            elif token in [94]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 1045
                 self.match(SolidityParser.T__93)
@@ -7482,7 +7482,7 @@ class SolidityParser ( Parser ):
             self.state = 1053
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0):
                 self.state = 1052
                 self.assemblyIdentifierList()
 
@@ -7492,7 +7492,7 @@ class SolidityParser ( Parser ):
             self.state = 1057
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__94:
+            if _la==95:
                 self.state = 1056
                 self.assemblyFunctionReturns()
 
@@ -7598,11 +7598,11 @@ class SolidityParser ( Parser ):
             self.state = 1067
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__14]:
+            if token in [15]:
                 self.state = 1065
                 self.assemblyBlock()
                 pass
-            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__35, SolidityParser.T__41, SolidityParser.T__50, SolidityParser.T__53, SolidityParser.T__57, SolidityParser.T__95, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
+            elif token in [14, 25, 36, 42, 51, 54, 58, 96, 104, 105, 107, 114, 118, 126, 128, 129, 130]:
                 self.state = 1066
                 self.assemblyExpression()
                 pass
@@ -7614,11 +7614,11 @@ class SolidityParser ( Parser ):
             self.state = 1072
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__14]:
+            if token in [15]:
                 self.state = 1070
                 self.assemblyBlock()
                 pass
-            elif token in [SolidityParser.T__13, SolidityParser.T__24, SolidityParser.T__35, SolidityParser.T__41, SolidityParser.T__50, SolidityParser.T__53, SolidityParser.T__57, SolidityParser.T__95, SolidityParser.DecimalNumber, SolidityParser.HexNumber, SolidityParser.HexLiteralFragment, SolidityParser.LeaveKeyword, SolidityParser.PayableKeyword, SolidityParser.ConstructorKeyword, SolidityParser.ReceiveKeyword, SolidityParser.Identifier, SolidityParser.StringLiteralFragment]:
+            elif token in [14, 25, 36, 42, 51, 54, 58, 96, 104, 105, 107, 114, 118, 126, 128, 129, 130]:
                 self.state = 1071
                 self.assemblyExpression()
                 pass
@@ -7729,22 +7729,22 @@ class SolidityParser ( Parser ):
             self.state = 1084
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.StringLiteralFragment]:
+            if token in [130]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 1080
                 self.stringLiteral()
                 pass
-            elif token in [SolidityParser.DecimalNumber]:
+            elif token in [104]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 1081
                 self.match(SolidityParser.DecimalNumber)
                 pass
-            elif token in [SolidityParser.HexNumber]:
+            elif token in [105]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 1082
                 self.match(SolidityParser.HexNumber)
                 pass
-            elif token in [SolidityParser.HexLiteralFragment]:
+            elif token in [107]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 1083
                 self.hexLiteral()
@@ -7848,7 +7848,7 @@ class SolidityParser ( Parser ):
             self.state = 1116
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SolidityParser.T__22]:
+            if token in [23]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 1090
                 self.match(SolidityParser.T__22)
@@ -7856,7 +7856,7 @@ class SolidityParser ( Parser ):
                 self.state = 1092
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                     self.state = 1091
                     self.expression(0)
 
@@ -7864,13 +7864,13 @@ class SolidityParser ( Parser ):
                 self.state = 1100
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 1094
                     self.match(SolidityParser.T__15)
                     self.state = 1096
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                    if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                         self.state = 1095
                         self.expression(0)
 
@@ -7882,20 +7882,20 @@ class SolidityParser ( Parser ):
                 self.state = 1103
                 self.match(SolidityParser.T__23)
                 pass
-            elif token in [SolidityParser.T__33]:
+            elif token in [34]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 1104
                 self.match(SolidityParser.T__33)
                 self.state = 1113
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & ((1 << (SolidityParser.T__5 - 6)) | (1 << (SolidityParser.T__13 - 6)) | (1 << (SolidityParser.T__22 - 6)) | (1 << (SolidityParser.T__24 - 6)) | (1 << (SolidityParser.T__29 - 6)) | (1 << (SolidityParser.T__33 - 6)) | (1 << (SolidityParser.T__35 - 6)) | (1 << (SolidityParser.T__37 - 6)) | (1 << (SolidityParser.T__41 - 6)) | (1 << (SolidityParser.T__53 - 6)) | (1 << (SolidityParser.T__54 - 6)) | (1 << (SolidityParser.T__55 - 6)) | (1 << (SolidityParser.T__56 - 6)) | (1 << (SolidityParser.T__57 - 6)) | (1 << (SolidityParser.T__58 - 6)) | (1 << (SolidityParser.T__59 - 6)) | (1 << (SolidityParser.T__60 - 6)) | (1 << (SolidityParser.T__62 - 6)) | (1 << (SolidityParser.T__63 - 6)) | (1 << (SolidityParser.T__64 - 6)) | (1 << (SolidityParser.T__65 - 6)) | (1 << (SolidityParser.T__66 - 6)))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.Int - 96)) | (1 << (SolidityParser.Uint - 96)) | (1 << (SolidityParser.Byte - 96)) | (1 << (SolidityParser.Fixed - 96)) | (1 << (SolidityParser.Ufixed - 96)) | (1 << (SolidityParser.BooleanLiteral - 96)) | (1 << (SolidityParser.DecimalNumber - 96)) | (1 << (SolidityParser.HexNumber - 96)) | (1 << (SolidityParser.HexLiteralFragment - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.TypeKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)) | (1 << (SolidityParser.StringLiteralFragment - 96)))) != 0):
+                if ((((_la - 6)) & ~0x3f) == 0 and ((1 << (_la - 6)) & 4539347023786803457) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 31277190141) != 0):
                     self.state = 1105
                     self.expression(0)
                     self.state = 1110
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    while _la==SolidityParser.T__15:
+                    while _la==16:
                         self.state = 1106
                         self.match(SolidityParser.T__15)
                         self.state = 1107
@@ -7960,7 +7960,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 1118
             _la = self._input.LA(1)
-            if not(_la==SolidityParser.DecimalNumber or _la==SolidityParser.HexNumber):
+            if not(_la==104 or _la==105):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -8027,7 +8027,7 @@ class SolidityParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 1122
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SolidityParser.T__13) | (1 << SolidityParser.T__24) | (1 << SolidityParser.T__41) | (1 << SolidityParser.T__53))) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & ((1 << (SolidityParser.T__95 - 96)) | (1 << (SolidityParser.LeaveKeyword - 96)) | (1 << (SolidityParser.PayableKeyword - 96)) | (1 << (SolidityParser.ConstructorKeyword - 96)) | (1 << (SolidityParser.ReceiveKeyword - 96)) | (1 << (SolidityParser.Identifier - 96)))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 18018796589563904) != 0) or ((((_la - 96)) & ~0x3f) == 0 and ((1 << (_la - 96)) & 13963100161) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -8137,7 +8137,7 @@ class SolidityParser ( Parser ):
             self.state = 1141
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SolidityParser.T__22:
+            if _la==23:
                 self.state = 1130
                 self.match(SolidityParser.T__22)
                 self.state = 1131
@@ -8145,7 +8145,7 @@ class SolidityParser ( Parser ):
                 self.state = 1136
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==SolidityParser.T__15:
+                while _la==16:
                     self.state = 1132
                     self.match(SolidityParser.T__15)
                     self.state = 1133
